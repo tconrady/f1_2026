@@ -1,4 +1,4 @@
-const generatedAt = "2026-04-24T16:20:36.011Z";
+const generatedAt = "2026-04-24T16:27:14.678Z";
 const rawData = {
   "races": [
     "AUS",
@@ -1615,7 +1615,7 @@ const summaries = {
     "Jane": "Ranked 6th with 66 points, Jane's team has real upside — Liam Lawson has been the stronger driver all season with 50 points to Hadjar's 16, and China's 54-point week showed what this lineup can do. Hadjar's recurring DNF penalties (-20 each race) are the ceiling-limiter here, but Lawson's trajectory is encouraging.",
     "David": "Ranked 7th with 41 points, David's team is quietly serviceable but not spectacular — Sainz grinds out consistent mid-range scores while Albon has gone negative twice. The positions-gained numbers for Sainz are actually impressive (6, 19, 20), but without qualifying bonus points it doesn't fully translate to the scoreboard.",
     "Charlie": "Dead last with 6 points, and Fernando Alonso is the culprit — three straight DNF penalty rounds have bled a cumulative -100 in penalties alone while only scoring -17 total for the season. Arvid Lindblad is positive at 23 points and has been the only reason this team hasn't gone fully negative; something has to change with Alonso.",
-    "Sarah": "Ranked 5th with 42 points — right around mid-table but showing an upward trend after a rough AUS (-9). Pierre Gasly is a steady earner with no DNF penalties, while Nico Hulkenberg's AUS disaster (-20) set the season back early; the DNF penalties on Hulkenberg (-80 total) have been the key drag on what could have been a solid campaign."
+    "Sarah": "Ranked 6th with 42 points — right around mid-table but showing an upward trend after a rough AUS (-9). Pierre Gasly is a steady earner with no DNF penalties, while Nico Hulkenberg's AUS disaster (-20) set the season back early; the DNF penalties on Hulkenberg (-80 total) have been the key drag on what could have been a solid campaign."
   }
 };
 const charts = {
