@@ -1,4 +1,4 @@
-const generatedAt = "2026-04-24T14:25:31.679Z";
+const generatedAt = "2026-04-24T15:27:04.333Z";
 const rawData = {
   "races": [
     "AUS",
@@ -1602,27 +1602,27 @@ const rawData = {
   }
 };
 const summaries = {
-  lastRace: "Japan handed Nora the biggest single-race swing of the weekend — her 47-point haul (25 above league average) was fuelled by Oscar Piastri finally delivering a 43-point race after two DNF-plagued disasters. Timo took the round win on paper but settled for 36 as Bearman's DNF penalty dragged him back, while Charlie scraped just 5 points — dead last in JPN and 17 below the league average. Kimi Antonelli's 50-point driver score was the standout individual performance of the race.",
-  season: "Timo sits comfortably at the top with 190 points, a 37-point cushion over second-place Margaret (153) — that gap is almost two full average race weekends, so don't expect it to close fast. Cecelia is a surprise third at 113, powered by Leclerc's relentless consistency, while Charlie is rooted to the bottom with just 6 points across three races. The big story is Nora's rocket trajectory — she went from -8 in AUS to 47 in JPN, and if Piastri keeps finishing races, she could be a dark horse.",
+  lastRace: "Nora took the JPN honours with 47 points — more than double the league average of 22.27 — powered by a huge Piastri bounce-back of 43 points after two miserable DNF-laden outings. Timo and Alyssa both came in below average at 36 and 17 respectively, with Max Verstappen's ongoing DNF penalties dragging Alyssa down for the third straight race. Charlie propped up the table again with just 5, as Fernando Alonso finally scraped into positive territory for the first time all season.",
+  season: "Timo sits alone at the top with 190 points, a commanding 37-point lead over second-place Margaret on 153 — Kimi Antonelli has been an absolute rocket ship all season with 150 points. Nora is the biggest mover of the back half of the season, jumping from last place after AUS to mid-table thanks to Piastri finally delivering in Japan. Charlie is rooted to the bottom on just 6 points with both drivers bleeding penalties, and the Lance Stroll situation at Mary Beth's garage is getting genuinely painful to watch.",
   players: {
-    "Alyssa": "You're sitting 5th overall at 105 points, and Max Verstappen is almost the entire reason — his 77-season total dwarfs Perez's 28. The problem is Max is trending down hard (50 → 14 → 13) and those recurring DNF penalties are bleeding you dry; fix nothing and this lead evaporates.",
-    "Nora": "Ranked 8th at 50 points, but you're the hottest team in the league right now after that JPN 47. Colapinto has actually been the steadier earner all season while Piastri's DNF curse torched your first two rounds — if Oscar stays on track, your ceiling is sky-high.",
-    "Jay": "9th place, 24 points — Bottas is a dead weight with -11 on the season and a DNF penalty that grows every race, and Norris can't carry this alone. Lando is quietly solid (35 pts) but the Bottas anchor keeps dragging your weekly scores into the gutter.",
-    "Margaret": "Second place at 153 and the most floor-proof team in the league — both Russell (111) and Ocon (42) have scored positively every single race without a single DNF penalty. George's Q3 bonus stacks are compounding beautifully, and this team only gets better as the season goes on.",
-    "Cecelia": "Third at 113 and the consistency queen of the league — your scores of 42, 37, and 34 are the tightest range of any player, earning that 88 consistency rating. Leclerc is doing heroic work (111 pts) while Bortoleto has cost you with two DNF penalties, but as long as Charles keeps delivering, you're top-three material.",
-    "Timo": "League leader at 190 and it's not close — Kimi Antonelli is the best-performing driver in the entire fantasy pool with 150 points, stacking fastest lap and DOTD bonuses on top of elite qualifying. Bearman's JPN DNF is the only blemish on an otherwise dominant team, and that consistency rating of 0 reflects how explosively high your ceiling actually is.",
-    "Mary Beth": "Seventh at 38 points, and this team is a tale of two extremes — Hamilton is quietly delivering (92 pts) but Lance Stroll has accumulated -54 points with DNF penalties that are escalating every race (−25, −45, −65). Stroll is statistically the most damaging driver in the league; cutting him loose should be your top priority.",
-    "Jane": "Sixth at 66 points with Liam Lawson (50 pts) doing the heavy lifting while Hadjar (16 pts) gets dragged down by a recurring -20 DNF penalty every race. Lawson's JPN positions-gained surge (13 spots) was massive and signals real upside — if Hadjar can stop retiring, this team could climb fast.",
-    "David": "10th at 41 points — Sainz has been the reliable earner (41 pts) with steadily growing positions-gained bonuses, but Albon has gone 8, -7, -1 and his DNF penalties in CHN and JPN have cost you dearly. This team needs Albon to simply finish races to unlock its true potential.",
-    "Charlie": "Dead last at 6 points, and Fernando Alonso is the single biggest reason — his DNF penalties have totalled -100 points across three races while contributing almost nothing in race scores. Lindblad is holding his own at 23 pts, but he can't overcome that kind of ballast; this team needs urgent surgery.",
-    "Sarah": "11th at 42 points — Gasly is a quiet, consistent earner (45 pts, no DNF penalties) while Hulkenberg keeps retiring and racking up -30-point penalties that wipe out his decent race scores. The good news is both drivers trended upward into JPN, so there's momentum to build on if Hulk can keep the car off the wall."
+    "Alyssa": "Sitting 4th overall on 105 points, your team started hot with a 54-point AUS but Max's DNF penalties have cost you big in CHN and JPN — he's racked up -55 in DNF points alone across the season. Checo is quietly consistent but never spectacular; without Max's early heroics, this roster would look very average.",
+    "Nora": "Ranked 8th on 50 points but with serious momentum — JPN's 47-point haul is your best race yet and Piastri's 43 in Japan hints at what this team can be. The brutal reality is that Piastri's cumulative DNF penalties of -100 across the season are the reason you're not top five.",
+    "Jay": "9th place on 24 points, and Bottas is the anchor dragging you toward the seabed — he's -11 for the season and has cost you 80 points in DNF penalties. Norris is doing his job with 35 points and improving overtaking numbers, but one hand can't clap.",
+    "Margaret": "Second place on 153 and the most consistent roster in the league — both George Russell and Esteban Ocon have been positive every single race. Russell's Q3 bonus is climbing race on race and Ocon's overtaking tally is quietly elite; no drama, just points.",
+    "Cecelia": "Third on the leaderboard with 113 points and the smoothest scoring curve in the league — 42, 37, 34 is remarkably steady. Leclerc is carrying the whole operation with 111 points while Bortoleto has contributed just 2; fix that second seat and this team is genuinely scary.",
+    "Timo": "League leader on 190 points and it's not even close — Antonelli's 150-point season is the best individual driver haul in the league. Bearman had a nightmare DNF in JPN which cost you a potential record week, but when both fire together like China's 102-point haul, no one comes close.",
+    "Mary Beth": "Ranked 7th on 38 points, and Lance Stroll has cost you -135 in DNF penalties across three races — that's genuinely catastrophic. Hamilton is solid at 92 points and quietly improving, but he's essentially playing a two-versus-one against the rest of the league every week.",
+    "Jane": "6th place on 66 points with Liam Lawson doing the heavy lifting at 50 points while Hadjar chips in 16. Lawson's CHN performance of 35 was your best single-driver race, and his positions-gained trend is pointing sharply upward — stick with him.",
+    "David": "7th on 41 points in what's becoming a frustrating season — Sainz provides 41 of those points all by himself while Albon has contributed exactly zero net points. Albon's DNF penalties are wiping out whatever race points he earns; this pairing needs a rethink.",
+    "Charlie": "Last place on just 6 points, and Fernando Alonso has been a -17-point anchor all season with -100 in cumulative DNF penalties. Lindblad is at least positive at 23, but even he's trending downward race on race — this lineup needs urgent surgery.",
+    "Sarah": "5th overall on 42 points and trending in the right direction — back-to-back positive races in CHN and JPN after a brutal AUS. Gasly is the consistent earner at 45 points while Hulkenberg's -80 in DNF penalties is the only thing keeping you out of the top four."
   }
 };
 const charts = {
   "Alyssa": [
     {
       title: "Max Verstappen — Bonus Points Breakdown by Race",
-      insight: "Verstappen's overtaking bonuses are massive but his escalating DNF penalties are eating the gains alive — he's been penalised every single race.",
+      insight: "Max's overtaking bonuses are enormous but his DNF penalties are eating almost all of it — he's leaving a trail of wasted upside.",
       type: "bar",
       data: {
         labels: rawData.races,
@@ -1636,19 +1636,19 @@ const charts = {
           {
             label: "Fastest Lap",
             data: rawData.players["Alyssa"].driverStats["Max Verstappen"].fastestLap,
-            backgroundColor: "#ffb30088",
+            backgroundColor: "#ffe06688",
             borderRadius: 4
           },
           {
             label: "DOTD",
             data: rawData.players["Alyssa"].driverStats["Max Verstappen"].dotd,
-            backgroundColor: "#a855f788",
+            backgroundColor: "#ff9f4088",
             borderRadius: 4
           },
           {
             label: "Q3 Bonus",
             data: rawData.players["Alyssa"].driverStats["Max Verstappen"].q3Bonus,
-            backgroundColor: "#22c55e88",
+            backgroundColor: "#a78bfa88",
             borderRadius: 4
           },
           {
@@ -1671,7 +1671,7 @@ const charts = {
     },
     {
       title: "Alyssa vs League Average — Race Score Scatter",
-      insight: "Alyssa started way above the pack in AUS but has converged toward the league average by JPN, signalling a worrying downward trend.",
+      insight: "Alyssa started the season well above average but has fallen below the league mean in JPN, mirroring Max's declining returns.",
       type: "scatter",
       data: {
         datasets: [
@@ -1684,8 +1684,8 @@ const charts = {
           {
             label: "League Avg",
             data: rawData.leagueAvgScatterPoints,
-            backgroundColor: "#ffffff55",
-            pointRadius: 7
+            backgroundColor: "#ffffff66",
+            pointRadius: 5
           }
         ]
       },
@@ -1694,7 +1694,7 @@ const charts = {
           legend: { labels: { color: "#b0bdd0" } }
         },
         scales: {
-          x: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
           y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
         }
       }
@@ -1702,16 +1702,16 @@ const charts = {
   ],
   "Nora": [
     {
-      title: "Oscar Piastri — DNF Penalty vs Q3 Bonus per Race",
-      insight: "Piastri's Q3 bonuses are real and growing, but his DNF penalties have completely dwarfed them every race — Japan was the first time the raw score wasn't a net negative.",
+      title: "Oscar Piastri — DNF Penalty vs Race Points Each Race",
+      insight: "Piastri's race points potential is real, but back-to-back DNF penalties of -20 and -40 wiped him out before Japan's redemption arc.",
       type: "bar",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Q3 Bonus",
-            data: rawData.players["Nora"].driverStats["Oscar Piastri"].q3Bonus,
-            backgroundColor: "#22c55e88",
+            label: "Race Points",
+            data: rawData.players["Nora"].driverStats["Oscar Piastri"].race,
+            backgroundColor: "#f97316aa",
             borderRadius: 4
           },
           {
@@ -1733,16 +1733,19 @@ const charts = {
       }
     },
     {
-      title: "Nora — Driver Season Contribution Split",
-      insight: "Colapinto has actually out-earned Piastri on the season — the supposed ace has been the liability while the wildcard delivered.",
+      title: "Nora — Driver Season Share (Total Points)",
+      insight: "Colapinto is actually ahead of Piastri on season totals — the rookie has been the more reliable scorer all year.",
       type: "doughnut",
       data: {
         labels: ["Oscar Piastri", "Franco Colapinto"],
         datasets: [
           {
-            data: [rawData.players["Nora"].driverSeasonTotals["Oscar Piastri"], rawData.players["Nora"].driverSeasonTotals["Franco Colapinto"]],
-            backgroundColor: ["#ff6b6b88", "#00d2ff88"],
-            borderColor: ["#ff6b6b", "#00d2ff"],
+            data: [
+              rawData.players["Nora"].driverSeasonTotals["Oscar Piastri"],
+              rawData.players["Nora"].driverSeasonTotals["Franco Colapinto"]
+            ],
+            backgroundColor: ["#f9731688", "#34d39988"],
+            borderColor: ["#f97316", "#34d399"],
             borderWidth: 2
           }
         ]
@@ -1757,26 +1760,22 @@ const charts = {
   "Jay": [
     {
       title: "Valtteri Bottas — Cumulative DNF Penalty Cost",
-      insight: "Bottas has cost Jay -80 points in DNF penalties alone across three races — that's more than triple Jay's entire season total.",
-      type: "line",
+      insight: "Bottas has haemorrhaged -80 points in DNF penalties across three races — that's the entire reason Jay sits near the bottom.",
+      type: "bar",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Bottas DNF/DQ Penalty",
-            data: rawData.players["Jay"].driverStats["Valtteri Bottas"].dnfDq,
-            borderColor: "#e8002d",
-            backgroundColor: "#e8002d22",
-            tension: 0.35,
-            fill: true
+            label: "Lando Norris DNF/DQ",
+            data: rawData.players["Jay"].driverStats["Lando Norris"].dnfDq,
+            backgroundColor: "#f97316aa",
+            borderRadius: 4
           },
           {
-            label: "Norris DNF/DQ Penalty",
-            data: rawData.players["Jay"].driverStats["Lando Norris"].dnfDq,
-            borderColor: "#ffb300",
-            backgroundColor: "#ffb30022",
-            tension: 0.35,
-            fill: true
+            label: "Valtteri Bottas DNF/DQ",
+            data: rawData.players["Jay"].driverStats["Valtteri Bottas"].dnfDq,
+            backgroundColor: "#e8002d88",
+            borderRadius: 4
           }
         ]
       },
@@ -1791,77 +1790,22 @@ const charts = {
       }
     },
     {
-      title: "Jay — Qualifying vs Race Points: Norris & Bottas",
-      insight: "Norris consistently contributes qualifying points while Bottas has earned zero from qualifying all season — the gap in floor quality between these two drivers is stark.",
-      type: "bar",
-      data: {
-        labels: rawData.races,
-        datasets: [
-          {
-            label: "Norris Qualifying",
-            data: rawData.players["Jay"].driverStats["Lando Norris"].qualifying,
-            backgroundColor: "#f97316aa",
-            borderRadius: 4
-          },
-          {
-            label: "Norris Race",
-            data: rawData.players["Jay"].driverStats["Lando Norris"].race,
-            backgroundColor: "#f9731644",
-            borderRadius: 4
-          },
-          {
-            label: "Bottas Qualifying",
-            data: rawData.players["Jay"].driverStats["Valtteri Bottas"].qualifying,
-            backgroundColor: "#6366f1aa",
-            borderRadius: 4
-          },
-          {
-            label: "Bottas Race",
-            data: rawData.players["Jay"].driverStats["Valtteri Bottas"].race,
-            backgroundColor: "#6366f144",
-            borderRadius: 4
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    }
-  ],
-  "Margaret": [
-    {
-      title: "Margaret — Radar Profile vs League",
-      insight: "Margaret's radar profile reveals elite average-per-race numbers that no other team can match — this is the most well-rounded lineup in the league.",
+      title: "Jay — Radar Performance Profile",
+      insight: "Jay's consistency score is decent but the low average per race exposes how much Bottas is suppressing the team ceiling.",
       type: "radar",
       data: {
         labels: ["Peak Score", "Avg per Race", "Consistency"],
         datasets: [
           {
-            label: "Margaret",
-            data: [rawData.players["Margaret"].radarProfile.peak, rawData.players["Margaret"].radarProfile.avgPerRace, rawData.players["Margaret"].radarProfile.consistency],
-            borderColor: "#22c55e",
-            backgroundColor: "#22c55e33",
-            pointBackgroundColor: "#22c55e"
-          },
-          {
-            label: "Timo",
-            data: [rawData.players["Timo"].radarProfile.peak, rawData.players["Timo"].radarProfile.avgPerRace, rawData.players["Timo"].radarProfile.consistency],
-            borderColor: "#a855f7",
-            backgroundColor: "#a855f733",
-            pointBackgroundColor: "#a855f7"
-          },
-          {
-            label: "Cecelia",
-            data: [rawData.players["Cecelia"].radarProfile.peak, rawData.players["Cecelia"].radarProfile.avgPerRace, rawData.players["Cecelia"].radarProfile.consistency],
-            borderColor: "#f97316",
-            backgroundColor: "#f9731633",
-            pointBackgroundColor: "#f97316"
+            label: "Jay",
+            data: [
+              rawData.players["Jay"].radarProfile.peak,
+              rawData.players["Jay"].radarProfile.avgPerRace,
+              rawData.players["Jay"].radarProfile.consistency
+            ],
+            backgroundColor: "#6366f133",
+            borderColor: "#6366f1",
+            pointBackgroundColor: "#6366f1"
           }
         ]
       },
@@ -1879,29 +1823,33 @@ const charts = {
           }
         }
       }
-    },
+    }
+  ],
+  "Margaret": [
     {
-      title: "George Russell — Q3 Bonus Accumulation per Race",
-      insight: "Russell's Q3 bonus is compounding race over race — it's become the single biggest consistent bonus source for any driver in the league.",
-      type: "line",
+      title: "George Russell — Qualifying vs Race Points by Race",
+      insight: "Russell is one of the only drivers in the league who earns meaningfully in both qualifying AND race — a dual-threat that compounds every weekend.",
+      type: "bar",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Russell Q3 Bonus",
-            data: rawData.players["Margaret"].driverStats["George Russell"].q3Bonus,
-            borderColor: "#22c55e",
-            backgroundColor: "#22c55e33",
-            tension: 0.35,
-            fill: true
+            label: "Qualifying Points",
+            data: rawData.players["Margaret"].driverStats["George Russell"].qualifying,
+            backgroundColor: "#818cf888",
+            borderRadius: 4
           },
           {
-            label: "Russell Qualifying Pts",
-            data: rawData.players["Margaret"].driverStats["George Russell"].qualifying,
-            borderColor: "#86efac",
-            backgroundColor: "#86efac22",
-            tension: 0.35,
-            fill: false
+            label: "Race Points",
+            data: rawData.players["Margaret"].driverStats["George Russell"].race,
+            backgroundColor: "#34d39988",
+            borderRadius: 4
+          },
+          {
+            label: "Q3 Bonus",
+            data: rawData.players["Margaret"].driverStats["George Russell"].q3Bonus,
+            backgroundColor: "#fbbf2488",
+            borderRadius: 4
           }
         ]
       },
@@ -1914,20 +1862,58 @@ const charts = {
           y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
         }
       }
+    },
+    {
+      title: "Margaret — Radar Performance Profile",
+      insight: "Margaret's radar is the most balanced in the league — high average, solid consistency, and a peak that's still growing.",
+      type: "radar",
+      data: {
+        labels: ["Peak Score", "Avg per Race", "Consistency"],
+        datasets: [
+          {
+            label: "Margaret",
+            data: [
+              rawData.players["Margaret"].radarProfile.peak,
+              rawData.players["Margaret"].radarProfile.avgPerRace,
+              rawData.players["Margaret"].radarProfile.consistency
+            ],
+            backgroundColor: "#34d39933",
+            borderColor: "#34d399",
+            pointBackgroundColor: "#34d399"
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          r: {
+            min: 0,
+            max: rawData.radarMax,
+            ticks: { color: "#b0bdd0", backdropColor: "transparent" },
+            grid: { color: "#1e1e2e" },
+            pointLabels: { color: "#b0bdd0" }
+          }
+        }
+      }
     }
   ],
   "Cecelia": [
     {
-      title: "Cecelia — Driver Season Contribution Split",
-      insight: "Leclerc is carrying 98% of this team's season earnings — Bortoleto's DNF penalties have reduced him to a near-zero contributor.",
+      title: "Cecelia — Driver Season Total Split",
+      insight: "Leclerc accounts for nearly 98% of Cecelia's effective scoring — Bortoleto's 2 points barely register on the doughnut.",
       type: "doughnut",
       data: {
         labels: ["Charles Leclerc", "Gabriel Bortoleto"],
         datasets: [
           {
-            data: [rawData.players["Cecelia"].driverSeasonTotals["Charles Leclerc"], rawData.players["Cecelia"].driverSeasonTotals["Gabriel Bortoleto"]],
-            backgroundColor: ["#ef444488", "#6366f188"],
-            borderColor: ["#ef4444", "#6366f1"],
+            data: [
+              rawData.players["Cecelia"].driverSeasonTotals["Charles Leclerc"],
+              rawData.players["Cecelia"].driverSeasonTotals["Gabriel Bortoleto"]
+            ],
+            backgroundColor: ["#e8002d88", "#fbbf2488"],
+            borderColor: ["#e8002d", "#fbbf24"],
             borderWidth: 2
           }
         ]
@@ -1939,23 +1925,35 @@ const charts = {
       }
     },
     {
-      title: "Leclerc vs Bortoleto — Positions Gained per Race",
-      insight: "Leclerc steadily gains positions every race while Bortoleto went negative in JPN — a sign that Leclerc is maximising strategy while Bortoleto is losing ground on track.",
-      type: "bar",
+      title: "Charles Leclerc — Bonus Points Accumulation Trend",
+      insight: "Leclerc's Q3 bonus and overtaking points are climbing every race — he's building momentum race by race like a well-oiled machine.",
+      type: "line",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Charles Leclerc",
-            data: rawData.players["Cecelia"].driverStats["Charles Leclerc"].positionsGained,
-            backgroundColor: "#ef444488",
-            borderRadius: 4
+            label: "Overtaking",
+            data: rawData.players["Cecelia"].driverStats["Charles Leclerc"].overtaking,
+            borderColor: "#f97316",
+            backgroundColor: "#f9731622",
+            tension: 0.35,
+            fill: true
           },
           {
-            label: "Gabriel Bortoleto",
-            data: rawData.players["Cecelia"].driverStats["Gabriel Bortoleto"].positionsGained,
-            backgroundColor: "#6366f188",
-            borderRadius: 4
+            label: "Q3 Bonus",
+            data: rawData.players["Cecelia"].driverStats["Charles Leclerc"].q3Bonus,
+            borderColor: "#a78bfa",
+            backgroundColor: "#a78bfa22",
+            tension: 0.35,
+            fill: true
+          },
+          {
+            label: "Fastest Lap",
+            data: rawData.players["Cecelia"].driverStats["Charles Leclerc"].fastestLap,
+            borderColor: "#fbbf24",
+            backgroundColor: "#fbbf2422",
+            tension: 0.35,
+            fill: true
           }
         ]
       },
@@ -1972,154 +1970,44 @@ const charts = {
   ],
   "Timo": [
     {
-      title: "Kimi Antonelli — Bonus Stack Breakdown per Race",
-      insight: "Antonelli's bonus stacking is elite — fastest lap, DOTD, and a skyrocketing Q3 bonus combine to make him the highest-value driver in the entire fantasy pool.",
-      type: "bar",
-      data: {
-        labels: rawData.races,
-        datasets: [
-          {
-            label: "Fastest Lap",
-            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].fastestLap,
-            backgroundColor: "#ffb30088",
-            borderRadius: 4
-          },
-          {
-            label: "DOTD",
-            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].dotd,
-            backgroundColor: "#a855f788",
-            borderRadius: 4
-          },
-          {
-            label: "Q3 Bonus",
-            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].q3Bonus,
-            backgroundColor: "#22c55e88",
-            borderRadius: 4
-          },
-          {
-            label: "Overtaking",
-            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].overtaking,
-            backgroundColor: "#00d2ff88",
-            borderRadius: 4
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { stacked: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { stacked: true, beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    },
-    {
-      title: "Timo vs Top Rivals — Race Score Scatter",
-      insight: "Timo's CHN 102-point explosion put him in a class of his own — no rival has come close to that ceiling, and even his floor scores beat most teams' peaks.",
-      type: "scatter",
-      data: {
-        datasets: [
-          {
-            label: "Timo",
-            data: rawData.players["Timo"].scatterPoints,
-            backgroundColor: "#a855f7cc",
-            pointRadius: 8
-          },
-          {
-            label: "Margaret",
-            data: rawData.players["Margaret"].scatterPoints,
-            backgroundColor: "#22c55ecc",
-            pointRadius: 8
-          },
-          {
-            label: "Cecelia",
-            data: rawData.players["Cecelia"].scatterPoints,
-            backgroundColor: "#f97316cc",
-            pointRadius: 8
-          },
-          {
-            label: "League Avg",
-            data: rawData.leagueAvgScatterPoints,
-            backgroundColor: "#ffffff55",
-            pointRadius: 6
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    }
-  ],
-  "Mary Beth": [
-    {
-      title: "Lance Stroll — Cumulative DNF Penalty Damage",
-      insight: "Stroll's DNF penalties have escalated from -25 to -45 to -65 — at this rate he'll cost Mary Beth more in penalties alone than Hamilton earns in points.",
-      type: "line",
-      data: {
-        labels: rawData.races,
-        datasets: [
-          {
-            label: "Stroll DNF/DQ Penalty",
-            data: rawData.players["Mary Beth"].driverStats["Lance Stroll"].dnfDq,
-            borderColor: "#e8002d",
-            backgroundColor: "#e8002d22",
-            tension: 0.35,
-            fill: true
-          },
-          {
-            label: "Hamilton Race Points",
-            data: rawData.players["Mary Beth"].driverStats["Lewis Hamilton"].race,
-            borderColor: "#00d2ff",
-            backgroundColor: "#00d2ff22",
-            tension: 0.35,
-            fill: true
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    },
-    {
-      title: "Mary Beth — Radar Profile vs Midfield Rivals",
-      insight: "Mary Beth's peak score is competitive but her average-per-race is crushed by Stroll's penalties — without him she'd be comfortably mid-table.",
+      title: "Timo — Top 3 Players Radar Comparison",
+      insight: "Timo dominates on average per race and peak score, but his consistency of 0 shows the CHN 102-point outlier skews everything — one bad race could shake the standings.",
       type: "radar",
       data: {
         labels: ["Peak Score", "Avg per Race", "Consistency"],
         datasets: [
           {
-            label: "Mary Beth",
-            data: [rawData.players["Mary Beth"].radarProfile.peak, rawData.players["Mary Beth"].radarProfile.avgPerRace, rawData.players["Mary Beth"].radarProfile.consistency],
-            borderColor: "#e8002d",
-            backgroundColor: "#e8002d33",
-            pointBackgroundColor: "#e8002d"
+            label: "Timo",
+            data: [
+              rawData.players["Timo"].radarProfile.peak,
+              rawData.players["Timo"].radarProfile.avgPerRace,
+              rawData.players["Timo"].radarProfile.consistency
+            ],
+            backgroundColor: "#f9731633",
+            borderColor: "#f97316",
+            pointBackgroundColor: "#f97316"
           },
           {
-            label: "Jane",
-            data: [rawData.players["Jane"].radarProfile.peak, rawData.players["Jane"].radarProfile.avgPerRace, rawData.players["Jane"].radarProfile.consistency],
-            borderColor: "#00d2ff",
-            backgroundColor: "#00d2ff33",
-            pointBackgroundColor: "#00d2ff"
+            label: "Margaret",
+            data: [
+              rawData.players["Margaret"].radarProfile.peak,
+              rawData.players["Margaret"].radarProfile.avgPerRace,
+              rawData.players["Margaret"].radarProfile.consistency
+            ],
+            backgroundColor: "#34d39933",
+            borderColor: "#34d399",
+            pointBackgroundColor: "#34d399"
           },
           {
-            label: "Sarah",
-            data: [rawData.players["Sarah"].radarProfile.peak, rawData.players["Sarah"].radarProfile.avgPerRace, rawData.players["Sarah"].radarProfile.consistency],
-            borderColor: "#ffb300",
-            backgroundColor: "#ffb30033",
-            pointBackgroundColor: "#ffb300"
+            label: "Cecelia",
+            data: [
+              rawData.players["Cecelia"].radarProfile.peak,
+              rawData.players["Cecelia"].radarProfile.avgPerRace,
+              rawData.players["Cecelia"].radarProfile.consistency
+            ],
+            backgroundColor: "#818cf833",
+            borderColor: "#818cf8",
+            pointBackgroundColor: "#818cf8"
           }
         ]
       },
@@ -2137,27 +2025,80 @@ const charts = {
           }
         }
       }
-    }
-  ],
-  "Jane": [
+    },
     {
-      title: "Jane — Qualifying Points: Hadjar vs Lawson per Race",
-      insight: "Hadjar consistently out-qualifies Lawson but then loses those positions in the race — the qualifying bonus is being wasted by on-track regression.",
+      title: "Kimi Antonelli — Qualifying, Race & Bonus Points Breakdown",
+      insight: "Antonelli earns meaningfully at every scoring category each race — this is what an elite fantasy driver looks like under the hood.",
       type: "bar",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Isack Hadjar Qualifying",
-            data: rawData.players["Jane"].driverStats["Isack Hadjar"].qualifying,
-            backgroundColor: "#f97316aa",
+            label: "Qualifying",
+            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].qualifying,
+            backgroundColor: "#818cf888",
             borderRadius: 4
           },
           {
-            label: "Liam Lawson Qualifying",
-            data: rawData.players["Jane"].driverStats["Liam Lawson"].qualifying,
-            backgroundColor: "#6366f1aa",
+            label: "Race",
+            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].race,
+            backgroundColor: "#34d39988",
             borderRadius: 4
+          },
+          {
+            label: "Q3 Bonus",
+            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].q3Bonus,
+            backgroundColor: "#a78bfa88",
+            borderRadius: 4
+          },
+          {
+            label: "Fastest Lap",
+            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].fastestLap,
+            backgroundColor: "#fbbf2488",
+            borderRadius: 4
+          },
+          {
+            label: "DOTD",
+            data: rawData.players["Timo"].driverStats["Kimi Antonelli"].dotd,
+            backgroundColor: "#f9731688",
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { stacked: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { stacked: true, beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    }
+  ],
+  "Mary Beth": [
+    {
+      title: "Lance Stroll — DNF Penalty Escalation by Race",
+      insight: "Stroll's DNF penalties have compounded race over race — -25, -45, -65 — making him the single most destructive asset in the entire league.",
+      type: "line",
+      data: {
+        labels: rawData.races,
+        datasets: [
+          {
+            label: "Lance Stroll DNF/DQ",
+            data: rawData.players["Mary Beth"].driverStats["Lance Stroll"].dnfDq,
+            borderColor: "#e8002d",
+            backgroundColor: "#e8002d22",
+            tension: 0.35,
+            fill: true
+          },
+          {
+            label: "Lewis Hamilton DNF/DQ",
+            data: rawData.players["Mary Beth"].driverStats["Lewis Hamilton"].dnfDq,
+            borderColor: "#34d399",
+            backgroundColor: "#34d39922",
+            tension: 0.35,
+            fill: true
           }
         ]
       },
@@ -2172,25 +2113,100 @@ const charts = {
       }
     },
     {
-      title: "Hadjar vs Lawson — Positions Gained per Race",
-      insight: "Lawson's positions-gained trend is accelerating fast — from -5 in AUS to +13 in JPN — while Hadjar is trending the wrong way, losing positions in the race.",
+      title: "Mary Beth — Qualifying vs Race Points: Hamilton vs Stroll",
+      insight: "Hamilton earns real qualifying points every race while Stroll contributes nothing from the grid — the gap in floor-level quality is stark.",
+      type: "bar",
+      data: {
+        labels: rawData.races,
+        datasets: [
+          {
+            label: "Hamilton Qualifying",
+            data: rawData.players["Mary Beth"].driverStats["Lewis Hamilton"].qualifying,
+            backgroundColor: "#818cf888",
+            borderRadius: 4
+          },
+          {
+            label: "Hamilton Race",
+            data: rawData.players["Mary Beth"].driverStats["Lewis Hamilton"].race,
+            backgroundColor: "#34d39988",
+            borderRadius: 4
+          },
+          {
+            label: "Stroll Qualifying",
+            data: rawData.players["Mary Beth"].driverStats["Lance Stroll"].qualifying,
+            backgroundColor: "#fbbf2488",
+            borderRadius: 4
+          },
+          {
+            label: "Stroll Race",
+            data: rawData.players["Mary Beth"].driverStats["Lance Stroll"].race,
+            backgroundColor: "#e8002d88",
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    }
+  ],
+  "Jane": [
+    {
+      title: "Jane — Score vs League Average Scatter",
+      insight: "Jane swung violently around the league average — last in AUS, best in the league in CHN, then back below average in JPN — pure boom-bust territory.",
+      type: "scatter",
+      data: {
+        datasets: [
+          {
+            label: "Jane",
+            data: rawData.players["Jane"].scatterPoints,
+            backgroundColor: "#fbbf24cc",
+            pointRadius: 7
+          },
+          {
+            label: "League Avg",
+            data: rawData.leagueAvgScatterPoints,
+            backgroundColor: "#ffffff66",
+            pointRadius: 5
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    },
+    {
+      title: "Liam Lawson — Positions Gained vs Overtaking Bonus Trend",
+      insight: "Lawson's positions gained and overtaking bonuses are both trending sharply upward — he's becoming one of the best mid-grid scorers in the game.",
       type: "line",
       data: {
         labels: rawData.races,
         datasets: [
           {
-            label: "Isack Hadjar",
-            data: rawData.players["Jane"].driverStats["Isack Hadjar"].positionsGained,
-            borderColor: "#f97316",
-            backgroundColor: "#f9731622",
+            label: "Positions Gained",
+            data: rawData.players["Jane"].driverStats["Liam Lawson"].positionsGained,
+            borderColor: "#34d399",
+            backgroundColor: "#34d39922",
             tension: 0.35,
             fill: false
           },
           {
-            label: "Liam Lawson",
-            data: rawData.players["Jane"].driverStats["Liam Lawson"].positionsGained,
-            borderColor: "#6366f1",
-            backgroundColor: "#6366f122",
+            label: "Overtaking Bonus",
+            data: rawData.players["Jane"].driverStats["Liam Lawson"].overtaking,
+            borderColor: "#fbbf24",
+            backgroundColor: "#fbbf2422",
             tension: 0.35,
             fill: false
           }
@@ -2209,27 +2225,80 @@ const charts = {
   ],
   "David": [
     {
-      title: "Carlos Sainz — Positions Gained vs Race Points per Race",
-      insight: "Sainz's positions-gained bonus is rapidly growing each race, making him one of the best value drivers for raw race-day scoring even without bonus stacks.",
-      type: "line",
+      title: "David — Carlos Sainz vs Alexander Albon Season Totals",
+      insight: "Albon's season total is exactly zero — every race point he's earned has been cancelled out by DNF penalties, making him a dead weight in the lineup.",
+      type: "doughnut",
+      data: {
+        labels: ["Carlos Sainz", "Alexander Albon (0 net)"],
+        datasets: [
+          {
+            data: [
+              rawData.players["David"].driverSeasonTotals["Carlos Sainz"],
+              1
+            ],
+            backgroundColor: ["#f9731688", "#e8002d44"],
+            borderColor: ["#f97316", "#e8002d"],
+            borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        }
+      }
+    },
+    {
+      title: "Carlos Sainz — Positions Gained vs DNF Penalty Each Race",
+      insight: "Sainz is gaining ground on track every race but a recurring minor penalty is consistently taxing his final score — reliable but slightly leaky.",
+      type: "bar",
       data: {
         labels: rawData.races,
         datasets: [
           {
             label: "Positions Gained",
             data: rawData.players["David"].driverStats["Carlos Sainz"].positionsGained,
-            borderColor: "#ef4444",
-            backgroundColor: "#ef444422",
-            tension: 0.35,
-            fill: false
+            backgroundColor: "#34d39988",
+            borderRadius: 4
           },
           {
-            label: "Race Points",
-            data: rawData.players["David"].driverStats["Carlos Sainz"].race,
-            borderColor: "#f97316",
-            backgroundColor: "#f9731622",
-            tension: 0.35,
-            fill: false
+            label: "DNF/DQ Penalty",
+            data: rawData.players["David"].driverStats["Carlos Sainz"].dnfDq,
+            backgroundColor: "#e8002d88",
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    }
+  ],
+  "Charlie": [
+    {
+      title: "Charlie — Fernando Alonso DNF Penalty Accumulation",
+      insight: "Alonso has cost Charlie -100 in DNF penalties across three races — without that dead weight, Charlie would be challenging mid-table.",
+      type: "bar",
+      data: {
+        labels: rawData.races,
+        datasets: [
+          {
+            label: "Arvid Lindblad DNF/DQ",
+            data: rawData.players["Charlie"].driverStats["Arvid Lindblad"].dnfDq,
+            backgroundColor: "#818cf888",
+            borderRadius: 4
+          },
+          {
+            label: "Fernando Alonso DNF/DQ",
+            data: rawData.players["Charlie"].driverStats["Fernando Alonso"].dnfDq,
+            backgroundColor: "#e8002d88",
+            borderRadius: 4
           }
         ]
       },
@@ -2244,32 +2313,97 @@ const charts = {
       }
     },
     {
-      title: "David — Radar Profile vs Bottom-Half Players",
-      insight: "David's consistency rating of 73 is the best of the bottom half — this team is reliably mediocre rather than wildly volatile, which is both a ceiling and a floor.",
+      title: "Charlie — Score vs League Average Scatter",
+      insight: "Charlie has been well below league average all season — the gap isn't closing, and with Alonso's penalty trend, it could get worse before it gets better.",
+      type: "scatter",
+      data: {
+        datasets: [
+          {
+            label: "Charlie",
+            data: rawData.players["Charlie"].scatterPoints,
+            backgroundColor: "#f43f5ecc",
+            pointRadius: 7
+          },
+          {
+            label: "League Avg",
+            data: rawData.leagueAvgScatterPoints,
+            backgroundColor: "#ffffff66",
+            pointRadius: 5
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    }
+  ],
+  "Sarah": [
+    {
+      title: "Sarah — Pierre Gasly vs Nico Hulkenberg Qualifying & Race Split",
+      insight: "Gasly earns at both ends of the weekend while Hulkenberg contributes zero from qualifying — Sarah needs Hulk to start showing up on Saturdays.",
+      type: "bar",
+      data: {
+        labels: rawData.races,
+        datasets: [
+          {
+            label: "Gasly Qualifying",
+            data: rawData.players["Sarah"].driverStats["Pierre Gasly"].qualifying,
+            backgroundColor: "#818cf888",
+            borderRadius: 4
+          },
+          {
+            label: "Gasly Race",
+            data: rawData.players["Sarah"].driverStats["Pierre Gasly"].race,
+            backgroundColor: "#34d39988",
+            borderRadius: 4
+          },
+          {
+            label: "Hulkenberg Qualifying",
+            data: rawData.players["Sarah"].driverStats["Nico Hulkenberg"].qualifying,
+            backgroundColor: "#fbbf2488",
+            borderRadius: 4
+          },
+          {
+            label: "Hulkenberg Race",
+            data: rawData.players["Sarah"].driverStats["Nico Hulkenberg"].race,
+            backgroundColor: "#e8002d88",
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: "#b0bdd0" } }
+        },
+        scales: {
+          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
+          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
+        }
+      }
+    },
+    {
+      title: "Sarah — Radar Performance Profile",
+      insight: "Sarah's radar shows a mid-tier team with decent consistency but a low peak ceiling — steady but not threatening the top without a major upgrade.",
       type: "radar",
       data: {
         labels: ["Peak Score", "Avg per Race", "Consistency"],
         datasets: [
           {
-            label: "David",
-            data: [rawData.players["David"].radarProfile.peak, rawData.players["David"].radarProfile.avgPerRace, rawData.players["David"].radarProfile.consistency],
-            borderColor: "#ef4444",
-            backgroundColor: "#ef444433",
-            pointBackgroundColor: "#ef4444"
-          },
-          {
-            label: "Charlie",
-            data: [rawData.players["Charlie"].radarProfile.peak, rawData.players["Charlie"].radarProfile.avgPerRace, rawData.players["Charlie"].radarProfile.consistency],
-            borderColor: "#6366f1",
-            backgroundColor: "#6366f133",
-            pointBackgroundColor: "#6366f1"
-          },
-          {
-            label: "Jay",
-            data: [rawData.players["Jay"].radarProfile.peak, rawData.players["Jay"].radarProfile.avgPerRace, rawData.players["Jay"].radarProfile.consistency],
-            borderColor: "#22c55e",
-            backgroundColor: "#22c55e33",
-            pointBackgroundColor: "#22c55e"
+            label: "Sarah",
+            data: [
+              rawData.players["Sarah"].radarProfile.peak,
+              rawData.players["Sarah"].radarProfile.avgPerRace,
+              rawData.players["Sarah"].radarProfile.consistency
+            ],
+            backgroundColor: "#f43f5e33",
+            borderColor: "#f43f5e",
+            pointBackgroundColor: "#f43f5e"
           }
         ]
       },
@@ -2285,141 +2419,6 @@ const charts = {
             grid: { color: "#1e1e2e" },
             pointLabels: { color: "#b0bdd0" }
           }
-        }
-      }
-    }
-  ],
-  "Charlie": [
-    {
-      title: "Fernando Alonso — DNF Penalty vs Total Race Score",
-      insight: "Alonso's DNF penalties have totalled -100 points — triple his actual race score contributions — making him the single most destructive asset in the entire league.",
-      type: "bar",
-      data: {
-        labels: rawData.races,
-        datasets: [
-          {
-            label: "Alonso Race Points",
-            data: rawData.players["Charlie"].driverStats["Fernando Alonso"].race,
-            backgroundColor: "#22c55e88",
-            borderRadius: 4
-          },
-          {
-            label: "Alonso DNF/DQ Penalty",
-            data: rawData.players["Charlie"].driverStats["Fernando Alonso"].dnfDq,
-            backgroundColor: "#e8002d88",
-            borderRadius: 4
-          },
-          {
-            label: "Lindblad Race Points",
-            data: rawData.players["Charlie"].driverStats["Arvid Lindblad"].race,
-            backgroundColor: "#00d2ff88",
-            borderRadius: 4
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    },
-    {
-      title: "Charlie vs League Average — Race Score Scatter",
-      insight: "Charlie has flatlined near zero all season while the league average sits 15–35 points above — this isn't a bad race here and there, it's a systemic team problem.",
-      type: "scatter",
-      data: {
-        datasets: [
-          {
-            label: "Charlie",
-            data: rawData.players["Charlie"].scatterPoints,
-            backgroundColor: "#6366f1cc",
-            pointRadius: 8
-          },
-          {
-            label: "League Avg",
-            data: rawData.leagueAvgScatterPoints,
-            backgroundColor: "#ffffff55",
-            pointRadius: 7
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
-        }
-      }
-    }
-  ],
-  "Sarah": [
-    {
-      title: "Sarah — Driver Season Contribution Split",
-      insight: "Gasly is carrying the entire operation — Hulkenberg's penalty-riddled season has left him in the red, making this effectively a one-driver team.",
-      type: "doughnut",
-      data: {
-        labels: ["Pierre Gasly", "Nico Hulkenberg (net 0, shown as 1)"],
-        datasets: [
-          {
-            data: [rawData.players["Sarah"].driverSeasonTotals["Pierre Gasly"], 1],
-            backgroundColor: ["#00d2ff88", "#e8002d88"],
-            borderColor: ["#00d2ff", "#e8002d"],
-            borderWidth: 2
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        }
-      }
-    },
-    {
-      title: "Gasly vs Hulkenberg — Overtaking Bonus Trend",
-      insight: "Both Gasly and Hulkenberg are generating growing overtaking bonuses, but Hulkenberg's DNF penalties wipe them out completely — the raw pace is there, the reliability is not.",
-      type: "line",
-      data: {
-        labels: rawData.races,
-        datasets: [
-          {
-            label: "Gasly Overtaking",
-            data: rawData.players["Sarah"].driverStats["Pierre Gasly"].overtaking,
-            borderColor: "#00d2ff",
-            backgroundColor: "#00d2ff22",
-            tension: 0.35,
-            fill: false
-          },
-          {
-            label: "Hulkenberg Overtaking",
-            data: rawData.players["Sarah"].driverStats["Nico Hulkenberg"].overtaking,
-            backgroundColor: "#ffb30022",
-            borderColor: "#ffb300",
-            tension: 0.35,
-            fill: false
-          },
-          {
-            label: "Hulkenberg DNF Penalty",
-            data: rawData.players["Sarah"].driverStats["Nico Hulkenberg"].dnfDq,
-            borderColor: "#e8002d",
-            backgroundColor: "#e8002d22",
-            tension: 0.35,
-            fill: false
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { labels: { color: "#b0bdd0" } }
-        },
-        scales: {
-          x: { ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } },
-          y: { beginAtZero: true, ticks: { color: "#b0bdd0" }, grid: { color: "#1e1e2e" } }
         }
       }
     }
