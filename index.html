@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Fantasy 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #07070f;
+      --bg-card:     #0d0d1a;
+      --bg-hover:    #13132a;
+      --text:        #b0bdd0;
+      --text-bright: #e8ecf4;
+      --text-dim:    #5a6a7d;
+      --accent:      #e8002d;
+      --accent2:     #15e4ff;
+      --gold:        #c9a227;
+      --silver:      #8c8c9e;
+      --bronze:      #9b6133;
+      --border:      #1a1a2e;
+      --grid-line:   #1e1e2e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+
+    /* ── Container ─────────────────────────────────────── */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── Header ────────────────────────────────────────── */
+    .site-header {
+      padding: 32px 0 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .site-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.03em;
+    }
+
+    .header-meta {
+      font-size: 0.8125rem;
+      color: var(--text-dim);
+    }
+
+    /* ── Cards ─────────────────────────────────────────── */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+
+    /* ── Summary strip ─────────────────────────────────── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 620px) {
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+
+    .summary-label {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .summary-text {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    /* ── Section label ─────────────────────────────────── */
+    .section-label {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── AI badge ──────────────────────────────────────── */
+    .ai-badge {
+      font-size: 0.6rem;
+      letter-spacing: 0.06em;
+      color: var(--accent2);
+      border: 1px solid var(--accent2);
+      border-radius: 4px;
+      padding: 1px 5px;
+    }
+
+    /* ── Chart grid ────────────────────────────────────── */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 680px) {
+      .chart-grid { grid-template-columns: 1fr; }
+    }
+
+    .chart-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 18px 16px;
+    }
+
+    .chart-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      margin-bottom: 3px;
+    }
+
+    .chart-insight {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    /* ── Player grid ───────────────────────────────────── */
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+      gap: 12px;
+    }
+
+    .player-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 16px 14px;
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease, transform 0.12s ease;
+      position: relative;
+    }
+
+    .player-card:hover {
+      border-color: var(--accent2);
+      background: var(--bg-hover);
+      transform: translateY(-2px);
+    }
+
+    .player-rank {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+
+    .player-rank.r1 { color: var(--gold); }
+    .player-rank.r2 { color: var(--silver); }
+    .player-rank.r3 { color: var(--bronze); }
+
+    .player-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      margin-bottom: 6px;
+      padding-right: 20px;
+    }
+
+    .player-total {
+      font-size: 1.625rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .driver-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .driver-pill {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      padding: 3px 7px;
+      border-radius: 5px;
+      background: var(--border);
+      border-left: 2px solid transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── Player page ───────────────────────────────────── */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-dim);
+      font-size: 0.8125rem;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      margin-bottom: 22px;
+      transition: color 0.12s;
+    }
+    .back-btn:hover { color: var(--text); }
+
+    .rank-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      background: var(--border);
+      color: var(--text-dim);
+    }
+
+    .rank-badge.r1 { background: var(--gold);   color: #07070f; }
+    .rank-badge.r2 { background: var(--silver); color: #07070f; }
+    .rank-badge.r3 { background: var(--bronze); color: var(--text-bright); }
+
+    .player-hero {
+      margin-bottom: 22px;
+    }
+
+    .player-hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-bright);
+      letter-spacing: -0.03em;
+      margin-bottom: 6px;
+    }
+
+    .hero-points {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .hero-drivers {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+
+    /* ── Quick stats row ───────────────────────────────── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-bright);
+      margin-bottom: 2px;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Error ─────────────────────────────────────────── */
+    .error-box {
+      background: #2a0a0a;
+      border: 1px solid #5a1010;
+      border-radius: 10px;
+      padding: 24px;
+      color: #ff8080;
+      margin: 40px auto;
+      max-width: 480px;
+      text-align: center;
+    }
+    .error-box strong { display: block; margin-bottom: 6px; color: #ffaaaa; font-size: 1rem; }
+    .error-box small  { color: #c06060; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="app"></div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════════════
+// COLOR PALETTE — one color per rank slot (sorted by points desc)
+// ══════════════════════════════════════════════════════════════════
+const PALETTE = [
+  '#e8002d',  // 1st  — F1 red
+  '#15e4ff',  // 2nd  — cyan
+  '#ffe66d',  // 3rd  — yellow
+  '#4ecdc4',  // 4th  — teal
+  '#ff8b94',  // 5th  — pink
+  '#b4a7d6',  // 6th  — lavender
+  '#ff851b',  // 7th  — orange
+  '#7fdbff',  // 8th  — sky blue
+  '#01d68a',  // 9th  — green
+  '#ffcc02',  // 10th — gold
+  '#f012be',  // 11th — magenta
+];
+
+// Shared Chart.js dark-theme axis config
+const DARK_SCALES = {
+  x: { ticks: { color: '#b0bdd0' }, grid: { color: '#1e1e2e' } },
+  y: { ticks: { color: '#b0bdd0' }, grid: { color: '#1e1e2e' }, beginAtZero: true },
+};
+const DARK_LEGEND = {
+  labels: { color: '#b0bdd0', boxWidth: 12, padding: 10, font: { size: 11 } }
+};
+
+// ══════════════════════════════════════════════════════════════════
+// STATE
+// rawData, summaries, charts, generatedAt are declared by data.js
+// (loaded synchronously via <script src="data.js"> in <head>)
+// ══════════════════════════════════════════════════════════════════
+let activeCharts = [];
+
+// ══════════════════════════════════════════════════════════════════
+// CHART LIFECYCLE
+// ══════════════════════════════════════════════════════════════════
+function destroyCharts() {
+  activeCharts.forEach(c => { try { c.destroy(); } catch (_) {} });
+  activeCharts = [];
+}
+
+function newChart(canvasId, config) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return null;
+  const c = new Chart(canvas.getContext('2d'), config);
+  activeCharts.push(c);
+  return c;
+}
+
+// ══════════════════════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════════════════════
+/** Players sorted by total descending, with rank + color attached. */
+function sortedPlayers() {
+  return Object.entries(rawData.players)
+    .sort(([, a], [, b]) => b.total - a.total)
+    .map(([name, data], i) => ({
+      name,
+      data,
+      rank:  i + 1,
+      color: PALETTE[i] || '#b0bdd0',
+    }));
+}
+
+function playerEntry(name) {
+  return sortedPlayers().find(p => p.name === name);
+}
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  return new Date(iso).toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'short', year: 'numeric'
+  });
+}
+
+function rankCls(r)   { return r <= 3 ? `r${r}` : ''; }
+function rankLabel(r) {
+  if (r === 1) return '🥇 1st';
+  if (r === 2) return '🥈 2nd';
+  if (r === 3) return '🥉 3rd';
+  return `#${r}`;
+}
+
+// ══════════════════════════════════════════════════════════════════
+// ROUTING  (hash-based: #  → league,  #player=Name → player page)
+// ══════════════════════════════════════════════════════════════════
+function getRoute() {
+  const h = location.hash.slice(1);
+  if (h.startsWith('player=')) {
+    return { view: 'player', name: decodeURIComponent(h.slice(7)) };
+  }
+  return { view: 'league' };
+}
+
+function navigate(hash) {
+  location.hash = hash;
+}
+
+window.addEventListener('hashchange', () => {
+  destroyCharts();
+  render();
+});
+
+// ══════════════════════════════════════════════════════════════════
+// MAIN RENDER DISPATCHER
+// ══════════════════════════════════════════════════════════════════
+function render() {
+  const app   = document.getElementById('app');
+  const route = getRoute();
+  if (route.view === 'player') {
+    renderPlayerPage(app, route.name);
+  } else {
+    renderLeaguePage(app);
+  }
+  window.scrollTo(0, 0);
+}
+
+// ══════════════════════════════════════════════════════════════════
+// LEAGUE OVERVIEW PAGE
+// ══════════════════════════════════════════════════════════════════
+function renderLeaguePage(container) {
+  const players  = sortedPlayers();
+  const lastRace = rawData.races[rawData.races.length - 1];
+  const updated  = generatedAt ? ` · Updated ${fmtDate(generatedAt)}` : '';
+
+  container.innerHTML = `
+    <header class="site-header">
+      <h1>🏎 F1 Fantasy 2026</h1>
+      <span class="header-meta">After ${rawData.races.length} races · Last: ${lastRace}${updated}</span>
+    </header>
+
+    <!-- AI Summaries -->
+    <div class="summary-grid">
+      <div class="card">
+        <div class="summary-label">
+          Last Race — ${lastRace}
+          <span class="ai-badge">AI</span>
+        </div>
+        <p class="summary-text">${summaries.lastRace}</p>
+      </div>
+      <div class="card">
+        <div class="summary-label">
+          Season Summary
+          <span class="ai-badge">AI</span>
+        </div>
+        <p class="summary-text">${summaries.season}</p>
+      </div>
+    </div>
+
+    <!-- League Charts -->
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Overall Standings</div>
+        <div class="chart-insight">Total points after ${rawData.races.length} races, sorted by rank</div>
+        <canvas id="chart-standings" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Weekly Race Scores</div>
+        <div class="chart-insight">Points per race for every player — hover to compare</div>
+        <canvas id="chart-weekly" height="220"></canvas>
+      </div>
+    </div>
+
+    <!-- Player Grid -->
+    <div class="section-label">All Players</div>
+    <div class="player-grid">
+      ${players.map(p => `
+        <div class="player-card" data-player="${p.name}">
+          <div class="player-rank ${rankCls(p.rank)}">${rankLabel(p.rank)}</div>
+          <div class="player-name">${p.name}</div>
+          <div class="player-total" style="color:${p.color}">${p.data.total}</div>
+          <div class="driver-pills">
+            <div class="driver-pill" style="border-left-color:${p.color}">${p.data.drivers.A}</div>
+            <div class="driver-pill" style="border-left-color:${p.color}77">${p.data.drivers.B}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  // Click delegation for player cards
+  container.querySelectorAll('.player-card').forEach(card => {
+    card.addEventListener('click', () => {
+      navigate('player=' + encodeURIComponent(card.dataset.player));
+    });
+  });
+
+  buildStandingsChart(players);
+  buildWeeklyChart(players);
+}
+
+function buildStandingsChart(players) {
+  newChart('chart-standings', {
+    type: 'bar',
+    data: {
+      labels: players.map(p => p.name),
+      datasets: [{
+        label: 'Total Points',
+        data:  players.map(p => p.data.total),
+        backgroundColor: players.map(p => p.color + 'bb'),
+        borderColor:     players.map(p => p.color),
+        borderWidth: 1,
+        borderRadius: 5,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: DARK_SCALES,
+    }
+  });
+}
+
+function buildWeeklyChart(players) {
+  newChart('chart-weekly', {
+    type: 'line',
+    data: {
+      labels: rawData.races,
+      datasets: players.map(p => ({
+        label:           p.name,
+        data:            p.data.raceScores,
+        borderColor:     p.color,
+        backgroundColor: 'transparent',
+        tension: 0.35,
+        borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 5,
+      }))
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: DARK_LEGEND },
+      scales: DARK_SCALES,
+    }
+  });
+}
+
+// ══════════════════════════════════════════════════════════════════
+// PLAYER PAGE
+// ══════════════════════════════════════════════════════════════════
+function renderPlayerPage(container, playerName) {
+  const entry = playerEntry(playerName);
+  if (!entry) {
+    container.innerHTML = `
+      <div class="error-box">
+        <strong>Player not found</strong>
+        <small>"${playerName}" is not in this league.</small>
+      </div>
+      <button class="back-btn" id="back-btn" style="margin:16px 0">← Back to league</button>
+    `;
+    document.getElementById('back-btn').addEventListener('click', () => navigate(''));
+    return;
+  }
+
+  const { data: player, rank, color } = entry;
+  const driverA     = player.drivers.A;
+  const driverB     = player.drivers.B;
+  const summary     = (summaries.players || {})[playerName] || '';
+  const aiChartList = (charts && charts[playerName]) || [];
+  const best        = Math.max(...player.raceScores);
+  const worst       = Math.min(...player.raceScores);
+  const avg         = player.radarProfile.avgPerRace;
+
+  container.innerHTML = `
+    <button class="back-btn" id="back-btn">← League Overview</button>
+
+    <div class="player-hero">
+      <div class="rank-badge ${rankCls(rank)}">${rankLabel(rank)}</div>
+      <h1>${playerName}</h1>
+      <div class="hero-points" style="color:${color}">${player.total}</div>
+      <div class="hero-drivers">${driverA} &amp; ${driverB}</div>
+    </div>
+
+    <!-- Quick stats -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-value">${best}</div>
+        <div class="stat-label">Best Race</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">${avg}</div>
+        <div class="stat-label">Avg / Race</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">${worst}</div>
+        <div class="stat-label">Worst Race</div>
+      </div>
+    </div>
+
+    <!-- AI summary -->
+    ${summary ? `
+      <div class="card" style="margin-bottom:28px">
+        <div class="summary-label">Player Summary <span class="ai-badge">AI</span></div>
+        <p class="summary-text">${summary}</p>
+      </div>
+    ` : ''}
+
+    <!-- Default charts -->
+    <div class="section-label">Charts</div>
+    <div class="chart-grid">
+      <div class="chart-card">
+        <div class="chart-title">Season Scores</div>
+        <div class="chart-insight">${playerName}'s race-by-race total vs league average</div>
+        <canvas id="def-chart-1" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Driver Split per Race</div>
+        <div class="chart-insight">${driverA} vs ${driverB} — who's carrying the team?</div>
+        <canvas id="def-chart-2" height="220"></canvas>
+      </div>
+    </div>
+
+    <!-- AI charts -->
+    ${aiChartList.length > 0 ? `
+      <div class="section-label">AI Charts <span class="ai-badge">AI</span></div>
+      <div class="chart-grid" id="ai-chart-grid"></div>
+    ` : ''}
+  `;
+
+  document.getElementById('back-btn').addEventListener('click', () => navigate(''));
+
+  buildPlayerScoreChart('def-chart-1', player, playerName, color);
+  buildDriverSplitChart('def-chart-2', player, driverA, driverB, color);
+
+  // Inject AI charts
+  if (aiChartList.length > 0) {
+    const grid = document.getElementById('ai-chart-grid');
+    aiChartList.forEach((cfg, i) => {
+      const canvasId = `ai-canvas-${i}`;
+      const card     = document.createElement('div');
+      card.className = 'chart-card';
+      card.innerHTML = `
+        <div class="chart-title">${cfg.title || 'Chart'}</div>
+        <div class="chart-insight">${cfg.insight || ''}</div>
+        <canvas id="${canvasId}" height="220"></canvas>
+      `;
+      grid.appendChild(card);
+
+      try {
+        newChart(canvasId, {
+          type:    cfg.type,
+          data:    cfg.data,
+          options: cfg.options || {},
+        });
+      } catch (err) {
+        const errEl       = document.createElement('p');
+        errEl.style.cssText = 'color:#ff8080;font-size:0.75rem;margin-top:8px';
+        errEl.textContent   = 'Chart render error: ' + err.message;
+        card.appendChild(errEl);
+      }
+    });
+  }
+}
+
+function buildPlayerScoreChart(id, player, playerName, color) {
+  newChart(id, {
+    type: 'line',
+    data: {
+      labels: rawData.races,
+      datasets: [
+        {
+          label:           playerName,
+          data:            player.raceScores,
+          borderColor:     color,
+          backgroundColor: color + '22',
+          tension: 0.35,
+          borderWidth: 2.5,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          fill: true,
+        },
+        {
+          label:           'League Avg',
+          data:            rawData.leagueAvgPerRace,
+          borderColor:     '#b0bdd055',
+          backgroundColor: 'transparent',
+          tension: 0.35,
+          borderWidth: 1.5,
+          borderDash: [5, 4],
+          pointRadius: 0,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: DARK_LEGEND },
+      scales: DARK_SCALES,
+    }
+  });
+}
+
+function buildDriverSplitChart(id, player, driverA, driverB, color) {
+  newChart(id, {
+    type: 'bar',
+    data: {
+      labels: rawData.races,
+      datasets: [
+        {
+          label:           driverA,
+          data:            player.driverScores[driverA],
+          backgroundColor: color + 'cc',
+          borderRadius: 4,
+        },
+        {
+          label:           driverB,
+          data:            player.driverScores[driverB],
+          backgroundColor: color + '55',
+          borderRadius: 4,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: DARK_LEGEND },
+      scales: {
+        x: { stacked: true, ticks: { color: '#b0bdd0' }, grid: { color: '#1e1e2e' } },
+        y: { stacked: true, ticks: { color: '#b0bdd0' }, grid: { color: '#1e1e2e' }, beginAtZero: true },
+      }
+    }
+  });
+}
+
+// ══════════════════════════════════════════════════════════════════
+// INIT — data.js loaded synchronously, so we can render immediately
+// ══════════════════════════════════════════════════════════════════
+if (typeof rawData === 'undefined') {
+  document.getElementById('app').innerHTML = `
+    <div class="error-box" style="margin-top:60px">
+      <strong>No data yet</strong>
+      <small>Run the GAS pipeline to generate data.js and push it to the repo.</small>
+    </div>`;
+} else {
+  render();
+}
+</script>
+</body>
+</html>
