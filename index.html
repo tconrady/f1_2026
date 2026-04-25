@@ -486,14 +486,14 @@ function renderLeaguePage(container) {
     <!-- League Charts -->
     <div class="chart-grid">
       <div class="chart-card">
-        <div class="chart-title">Overall Standings</div>
-        <div class="chart-insight">Total points after ${rawData.races.length} races, sorted by rank</div>
-        <canvas id="chart-standings" height="220"></canvas>
-      </div>
-      <div class="chart-card">
         <div class="chart-title">Weekly Race Scores</div>
         <div class="chart-insight">Points per race for every player — hover to compare</div>
         <canvas id="chart-weekly" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Overall Standings</div>
+        <div class="chart-insight">Total points after ${rawData.races.length} races, sorted by rank</div>
+        <canvas id="chart-standings" height="220"></canvas>
       </div>
     </div>
 
