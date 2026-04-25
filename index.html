@@ -313,6 +313,64 @@
       letter-spacing: 0.06em;
     }
 
+    /* ── Player pill bar (league page) ────────────────── */
+    .player-pill-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .player-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-dim);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      cursor: pointer;
+      transition: border-color 0.12s, color 0.12s, background 0.12s;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .player-pill:hover {
+      border-color: var(--accent2);
+      color: var(--text-bright);
+      background: var(--bg-hover);
+    }
+
+    /* ── Prev / next player nav (player page) ──────────── */
+    .player-page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .player-nav {
+      display: flex;
+      gap: 6px;
+    }
+
+    .nav-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-dim);
+      font-size: 0.7rem;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: border-color 0.12s, color 0.12s;
+      white-space: nowrap;
+    }
+
+    .nav-btn:hover {
+      border-color: var(--accent2);
+      color: var(--text-bright);
+    }
+
     /* ── Error ─────────────────────────────────────────── */
     .error-box {
       background: #2a0a0a;
@@ -465,6 +523,11 @@ function renderLeaguePage(container) {
       <span class="header-meta">After ${rawData.races.length} races · Last: ${lastRace}${updated}</span>
     </header>
 
+    <!-- Player quick-jump pills -->
+    <div class="player-pill-bar">
+      ${players.map(p => `<button class="player-pill" data-player="${p.name}">#${p.rank} ${p.name}</button>`).join('')}
+    </div>
+
     <!-- AI Summaries -->
     <div class="summary-grid">
       <div class="card">
@@ -514,10 +577,10 @@ function renderLeaguePage(container) {
     </div>
   `;
 
-  // Click delegation for player cards
-  container.querySelectorAll('.player-card').forEach(card => {
-    card.addEventListener('click', () => {
-      navigate('player=' + encodeURIComponent(card.dataset.player));
+  // Click delegation — player cards and pill bar
+  container.querySelectorAll('[data-player]').forEach(el => {
+    el.addEventListener('click', () => {
+      navigate('player=' + encodeURIComponent(el.dataset.player));
     });
   });
 
@@ -598,11 +661,21 @@ function renderPlayerPage(container, playerName) {
   const worst       = Math.min(...player.raceScores);
   const avg         = player.radarProfile.avgPerRace;
 
+  const allPlayers  = sortedPlayers();
+  const prevPlayer  = allPlayers.find(p => p.rank === rank - 1) || null;
+  const nextPlayer  = allPlayers.find(p => p.rank === rank + 1) || null;
+
   container.innerHTML = `
     <button class="back-btn" id="back-btn">← League Overview</button>
 
     <div class="player-hero">
-      <div class="rank-badge ${rankCls(rank)}">${rankLabel(rank)}</div>
+      <div class="player-page-header">
+        <div class="rank-badge ${rankCls(rank)}">${rankLabel(rank)}</div>
+        <div class="player-nav">
+          ${prevPlayer ? `<button class="nav-btn" id="nav-prev">← ${prevPlayer.name}</button>` : ''}
+          ${nextPlayer ? `<button class="nav-btn" id="nav-next">${nextPlayer.name} →</button>` : ''}
+        </div>
+      </div>
       <h1>${playerName}</h1>
       <div class="hero-points" style="color:${color}">${player.total}</div>
       <div class="hero-drivers">${driverA} &amp; ${driverB}</div>
@@ -655,6 +728,8 @@ function renderPlayerPage(container, playerName) {
   `;
 
   document.getElementById('back-btn').addEventListener('click', () => navigate(''));
+  if (prevPlayer) document.getElementById('nav-prev').addEventListener('click', () => navigate('player=' + encodeURIComponent(prevPlayer.name)));
+  if (nextPlayer) document.getElementById('nav-next').addEventListener('click', () => navigate('player=' + encodeURIComponent(nextPlayer.name)));
 
   buildPlayerScoreChart('def-chart-1', player, playerName, color);
   buildDriverSplitChart('def-chart-2', player, driverA, driverB, color);
